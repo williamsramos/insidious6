@@ -1,0 +1,179 @@
+/* Importa fontes assustadoras do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&display=swap');
+
+body {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+  font-family: 'Metal Mania', cursive, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  cursor: url('https://www.freeiconspng.com/uploads/knife-icon-png-1.png'), auto;
+  background-image: url('insidious-6.png'); /* Substitua pelo link da sua imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Efeito de fundo sutil (opcional: pode ser uma textura ou silhueta) */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Exemplo de textura sutil. Você pode substituir por uma imagem de sangue, névoa, etc. */
+  background-image: url('https://www.transparenttextures.com/patterns/dark-leather.png');
+  background-size: cover;
+  opacity: 0.1; /* Torna a textura bem sutil */
+  z-index: -1; /* Garante que fique atrás do conteúdo */
+}
+
+.container {
+  /* Fundo do container semi-transparente e escuro */
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 40px 60px;
+  border-radius: 15px;
+  text-align: center;
+  /* Sombra vermelha para um efeito de brilho sinistro */
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.5), 0 0 60px rgba(255, 0, 0, 0.3);
+  border: 2px solid #5e0101; /* Borda vermelha escura */
+  position: relative;
+  z-index: 1; /* Garante que o container fique acima do fundo */
+}
+
+h1 {
+  /* Fonte mais assustadora para o título principal */
+  font-family: 'Creepster', cursive;
+  color: #845b5b; /* Vermelho sangue */
+  font-size: 4.5em;
+  margin-bottom: 20px;
+  /* Efeito de brilho no texto */
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+  /* Animação de pulsação sutil */
+  animation: pulse 2s infinite alternate;
+}
+
+h2#filmeTitulo {
+  color: #ffffff; /* Branco para contraste */
+  font-size: 2.8em;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#timer {
+  font-family: 'Metal Mania', cursive;
+  font-size: 5.5em;
+  color: #ffffff; /* Branco para o contador */
+  margin-bottom: 40px;
+  /* Brilho vermelho para o contador */
+  text-shadow: 0 0 15px #ff0000, 0 0 25px #ff0000;
+  letter-spacing: 5px; /* Espaçamento entre as letras */
+  /* Animação de cintilação para o timer */
+  animation: flicker 0.5s infinite alternate;
+}
+
+#mensagemFinal {
+  font-family: 'Creepster', cursive;
+  font-size: 3.5em;
+  color: #ff0000; /* Vermelho sangue */
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+  animation: pulse 1.5s infinite alternate;
+}
+
+#medo {
+  font-size: 8em; /* Faca grande */
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #5e0101; /* Vermelho escuro */
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+  /* Animação de balanço para a faca */
+  animation: swing 3s infinite ease-in-out alternate;
+  transform-origin: top center; /* A faca balança a partir do topo */
+  z-index: 0; /* Fica atrás do container */
+}
+
+/* Keyframe Animations */
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 15px #ff0000, 0 0 25px #ff0000;
+  }
+  50% {
+    opacity: 0.8;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+  }
+  25%, 75% {
+    opacity: 0.9;
+    text-shadow: 0 0 12px #ff0000, 0 0 22px #ff0000;
+  }
+}
+
+@keyframes swing {
+  0% { transform: rotate(-10deg); }
+  100% { transform: rotate(10deg); }
+}
+
+/* Ajustes para telas menores (responsividade) */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 40px;
+  }
+  h1 {
+    font-size: 3.5em;
+  }
+  h2#filmeTitulo {
+    font-size: 2.2em;
+  }
+  #timer {
+    font-size: 4.5em;
+  }
+  #mensagemFinal {
+    font-size: 2.8em;
+  }
+  #medo {
+    font-size: 6em;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 30px;
+  }
+  h1 {
+    font-size: 2.8em;
+  }
+  h2#filmeTitulo {
+    font-size: 1.8em;
+  }
+  #timer {
+    font-size: 3.5em;
+  }
+  #mensagemFinal {
+    font-size: 2.2em;
+  }
+  #medo {
+    font-size: 4em;
+  }
+}
