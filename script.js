@@ -1,5 +1,5 @@
 //Data e hora do Filme de estreia do Sobrenatural 6 - Insidious (29 de agosto de 2026)
-const estreiaFilme = new Date('2026-7-21T22:00:00');
+const estreiaFilme = new Date(2026,7,21,22,0,0);
 // Mês começa em 0 (0 = Janeiro, 1 = Fevereiro, ..., 7 = Agosto )
 
 //Elementos do HTML
