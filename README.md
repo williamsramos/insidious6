@@ -1,4 +1,4 @@
-<h1 align="center"> Projeto  Sobrenatural 6  </h1>
+<h1 align="center"> Projeto  Sobrenatural 6 Entre nós agora  </h1>
 
 <p align="center">
 Projeto desenvolvido por William Ramos <br/>
