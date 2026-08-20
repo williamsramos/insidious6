@@ -1,4 +1,4 @@
-<h1 align="center"> Projeto  Sobrenatural 6 Entre nós agora  </h1>
+<h1 align="center"> Projeto  Sobrenatural 6 Agora entre Nós  </h1>
 
 <p align="center">
 Projeto desenvolvido por William Ramos <br/>
@@ -27,9 +27,8 @@ Projeto desenvolvido por William Ramos <br/>
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 [x] HTML, CSS e JS
-
-
 [x] Git e Github
+[x] Ia Claude 
 
 ## 💻 Projeto
 
