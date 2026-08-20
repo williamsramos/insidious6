@@ -38,7 +38,7 @@ Projeto sobre o filme Sobrenatural 6 .
 - [Acesse o projeto finalizado, online](https://github.com/williamsramos/insidious6)
 - [Acesse o site do projeto finalizado, online](https://williamsramos.github.io/insidious6)
 - [Acesse o site do projeto finalizado, online](https://insidious6.vercel.app)
-- [Acesse o site do projeto finalizado, online](https://insidious6.netlify.app)
+
 
 
 
